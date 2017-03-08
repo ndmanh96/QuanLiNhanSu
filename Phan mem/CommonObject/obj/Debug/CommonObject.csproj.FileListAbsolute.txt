@@ -16,3 +16,8 @@ E:\QLNS\Phan mem\CommonObject\obj\Debug\CommonObject.csprojResolveAssemblyRefere
 E:\QLNS\Phan mem\CommonObject\obj\Debug\CommonObject.dll
 E:\QLNS\Phan mem\CommonObject\obj\Debug\CommonObject.pdb
 C:\Users\Manh Beo\Desktop\QLNS\Phan mem\CommonObject\obj\Debug\CommonObject.csprojResolveAssemblyReference.cache
+F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\CommonObject\bin\Debug\CommonObject.dll
+F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\CommonObject\bin\Debug\CommonObject.pdb
+F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\CommonObject\obj\Debug\CommonObject.csprojResolveAssemblyReference.cache
+F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\CommonObject\obj\Debug\CommonObject.dll
+F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\CommonObject\obj\Debug\CommonObject.pdb

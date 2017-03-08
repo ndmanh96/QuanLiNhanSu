@@ -40,3 +40,10 @@ E:\QLNS\Phan mem\DAL\bin\Debug\DAL.dll
 E:\QLNS\Phan mem\DAL\bin\Debug\DAL.pdb
 E:\QLNS\Phan mem\DAL\bin\Debug\CommonObject.dll
 E:\QLNS\Phan mem\DAL\bin\Debug\CommonObject.pdb
+F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\DAL\bin\Debug\DAL.dll
+F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\DAL\bin\Debug\DAL.pdb
+F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\DAL\bin\Debug\CommonObject.dll
+F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\DAL\bin\Debug\CommonObject.pdb
+F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\DAL\obj\Debug\DAL.dll
+F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\DAL\obj\Debug\DAL.pdb
