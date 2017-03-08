@@ -28,64 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_tknv = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txt_tennv = new System.Windows.Forms.TextBox();
+            this.cmb_pb = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_tk = new GUI.ComponentForm.Thin_Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_tknv)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgv_tknv
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 221);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(819, 253);
-            this.dataGridView1.TabIndex = 0;
+            this.dgv_tknv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_tknv.Location = new System.Drawing.Point(0, 253);
+            this.dgv_tknv.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dgv_tknv.Name = "dgv_tknv";
+            this.dgv_tknv.Size = new System.Drawing.Size(1092, 289);
+            this.dgv_tknv.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(3, 17);
+            this.label1.Location = new System.Drawing.Point(4, 19);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(324, 36);
+            this.label1.Size = new System.Drawing.Size(402, 46);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tìm Kiếm Nhân Viên";
             // 
-            // textBox1
+            // txt_tennv
             // 
-            this.textBox1.Location = new System.Drawing.Point(117, 124);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(227, 20);
-            this.textBox1.TabIndex = 2;
+            this.txt_tennv.Location = new System.Drawing.Point(156, 142);
+            this.txt_tennv.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txt_tennv.Name = "txt_tennv";
+            this.txt_tennv.Size = new System.Drawing.Size(301, 22);
+            this.txt_tennv.TabIndex = 2;
+            this.txt_tennv.Text = "Nhập tên nhân viên";
+            this.txt_tennv.Click += new System.EventHandler(this.txt_tennv_Click);
+            this.txt_tennv.TextChanged += new System.EventHandler(this.txt_tennv_TextChanged);
             // 
-            // comboBox1
+            // cmb_pb
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(516, 122);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(260, 22);
-            this.comboBox1.TabIndex = 3;
+            this.cmb_pb.FormattingEnabled = true;
+            this.cmb_pb.Location = new System.Drawing.Point(688, 139);
+            this.cmb_pb.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.cmb_pb.Name = "cmb_pb";
+            this.cmb_pb.Size = new System.Drawing.Size(345, 24);
+            this.cmb_pb.TabIndex = 3;
+            this.cmb_pb.SelectedIndexChanged += new System.EventHandler(this.cmb_pb_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 129);
+            this.label2.Location = new System.Drawing.Point(64, 147);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(25, 14);
+            this.label2.Size = new System.Drawing.Size(33, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Tên";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(451, 127);
+            this.label3.Location = new System.Drawing.Point(601, 145);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 14);
+            this.label3.Size = new System.Drawing.Size(78, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "Phòng Ban";
             // 
@@ -101,9 +111,10 @@
             this.btn_tk.InnerColorDisable = System.Drawing.Color.Empty;
             this.btn_tk.InnerColorHover = System.Drawing.Color.Empty;
             this.btn_tk.InnerColorNomal = System.Drawing.Color.Transparent;
-            this.btn_tk.Location = new System.Drawing.Point(701, 165);
+            this.btn_tk.Location = new System.Drawing.Point(935, 189);
+            this.btn_tk.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_tk.Name = "btn_tk";
-            this.btn_tk.Size = new System.Drawing.Size(75, 25);
+            this.btn_tk.Size = new System.Drawing.Size(100, 29);
             this.btn_tk.SizeBorder = 1;
             this.btn_tk.TabIndex = 6;
             this.btn_tk.Text = "Tìm Kiếm";
@@ -117,21 +128,24 @@
             this.btn_tk.UseBorderColorHoverClick = false;
             this.btn_tk.UseInnerColorHoverClick = false;
             this.btn_tk.UseTextColorHoverClick = false;
+            this.btn_tk.Click += new System.EventHandler(this.btn_tk_Click);
             // 
             // TimKiem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btn_tk);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cmb_pb);
+            this.Controls.Add(this.txt_tennv);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_tknv);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "TimKiem";
-            this.Size = new System.Drawing.Size(822, 477);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Size = new System.Drawing.Size(1096, 545);
+            this.Load += new System.EventHandler(this.TimKiem_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_tknv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,10 +153,10 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_tknv;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txt_tennv;
+        private System.Windows.Forms.ComboBox cmb_pb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private ComponentForm.Thin_Button btn_tk;
