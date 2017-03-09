@@ -96,12 +96,30 @@ namespace GUI.UC
 
         private void btn_them_Click(object sender, EventArgs e)
         {
-        
+            clearInput();
+            enableInput();
+         
         }
 
         private void btn_capnhat_Click(object sender, EventArgs e)
         {
-           
+            QLNS.ValueObject.NhanVien a = new QLNS.ValueObject.NhanVien();
+            a.MaNV = txtmanv.Text.Trim();
+            a.TenNV = txttennv.Text.Trim();
+            a.NgaySinh = datepk.Value;
+            a.GioiTinh = com_gt.Text.Trim();
+            a.MaPB = com_pb.SelectedValue.ToString();
+            a.Luong1 = float.Parse(txtluong.Text);
+            a.DiaChi = txtdc.Text;
+            a.SDT1 = txtsdt.Text.Trim();
+
+
+            if (a.MaNV == null || a.MaNV == "") throw new Exception();
+            if (BUS.them_NV(a) == 1)
+            {
+                loadtodgv();
+                MessageBox.Show("Thêm Thành Công");
+            }
         }
 
         private void btn_xoa_Click(object sender, EventArgs e)
