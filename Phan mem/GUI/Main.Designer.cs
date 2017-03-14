@@ -30,19 +30,22 @@
         {
             this.paluse = new System.Windows.Forms.Panel();
             this.panmenu = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.help = new System.Windows.Forms.ToolStripMenuItem();
+            this.fl_help = new GUI.ComponentForm.Flat_Button();
             this.flat_thoat = new GUI.ComponentForm.Flat_Button();
             this.flat_sach = new GUI.ComponentForm.Flat_Button();
             this.flat_thongke = new GUI.ComponentForm.Flat_Button();
             this.flat_timkiem = new GUI.ComponentForm.Flat_Button();
-            this.fl_help = new GUI.ComponentForm.Flat_Button();
             this.panmenu.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // paluse
             // 
             this.paluse.Location = new System.Drawing.Point(207, 1);
             this.paluse.Name = "paluse";
-            this.paluse.Size = new System.Drawing.Size(817, 503);
+            this.paluse.Size = new System.Drawing.Size(817, 467);
             this.paluse.TabIndex = 1;
             // 
             // panmenu
@@ -54,11 +57,66 @@
             this.panmenu.Controls.Add(this.flat_sach);
             this.panmenu.Controls.Add(this.flat_thongke);
             this.panmenu.Controls.Add(this.flat_timkiem);
+            this.panmenu.Controls.Add(this.menuStrip1);
             this.panmenu.Location = new System.Drawing.Point(1, 1);
             this.panmenu.Name = "panmenu";
-            this.panmenu.Size = new System.Drawing.Size(207, 518);
+            this.panmenu.Size = new System.Drawing.Size(207, 481);
             this.panmenu.TabIndex = 0;
             this.panmenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panmenu_Paint);
+            this.panmenu.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.panmenu_PreviewKeyDown);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.help});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(207, 24);
+            this.menuStrip1.TabIndex = 8;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // help
+            // 
+            this.help.Name = "help";
+            this.help.Size = new System.Drawing.Size(44, 20);
+            this.help.Text = "Help";
+            this.help.Click += new System.EventHandler(this.help_Click);
+            // 
+            // fl_help
+            // 
+            this.fl_help.Active = false;
+            this.fl_help.BackColor = System.Drawing.Color.Transparent;
+            this.fl_help.BackgroundColorClick = System.Drawing.Color.Yellow;
+            this.fl_help.BackgroundColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.fl_help.BackgroundColorNormal = System.Drawing.Color.Transparent;
+            this.fl_help.IconAlignment = 3;
+            this.fl_help.IconClick = null;
+            this.fl_help.IconHover = null;
+            this.fl_help.IconNormal = null;
+            this.fl_help.IconPositions = GUI.ComponentForm.Flat_Button.IconPosition.OnlyText;
+            this.fl_help.IconSize = new System.Drawing.Size(0, 0);
+            this.fl_help.LineColorClick = System.Drawing.Color.Empty;
+            this.fl_help.LineColorHover = System.Drawing.Color.Empty;
+            this.fl_help.LineColorNormal = System.Drawing.Color.Green;
+            this.fl_help.LineLayout = GUI.ComponentForm.Flat_Button.LinePosition.None;
+            this.fl_help.LineSize = 0;
+            this.fl_help.Location = new System.Drawing.Point(9, 346);
+            this.fl_help.MinimumSize = new System.Drawing.Size(23, 23);
+            this.fl_help.Name = "fl_help";
+            this.fl_help.Size = new System.Drawing.Size(189, 36);
+            this.fl_help.TabIndex = 7;
+            this.fl_help.Text = "HELP";
+            this.fl_help.TextAlignmentHorizontal = System.Drawing.StringAlignment.Center;
+            this.fl_help.TextAlignmentVertical = System.Drawing.StringAlignment.Center;
+            this.fl_help.TextColorClick = System.Drawing.Color.Empty;
+            this.fl_help.TextColorHover = System.Drawing.Color.Empty;
+            this.fl_help.TextColorNormal = System.Drawing.Color.Black;
+            this.fl_help.UseActive = true;
+            this.fl_help.UseBackgroundHoverClick = true;
+            this.fl_help.UseIconHoverClick = false;
+            this.fl_help.UseLineHoverClick = false;
+            this.fl_help.UseTextHoverClick = false;
+            this.fl_help.Click += new System.EventHandler(this.fl_help_Click);
             // 
             // flat_thoat
             // 
@@ -78,10 +136,10 @@
             this.flat_thoat.LineColorNormal = System.Drawing.Color.Green;
             this.flat_thoat.LineLayout = GUI.ComponentForm.Flat_Button.LinePosition.None;
             this.flat_thoat.LineSize = 0;
-            this.flat_thoat.Location = new System.Drawing.Point(9, 418);
-            this.flat_thoat.MinimumSize = new System.Drawing.Size(23, 25);
+            this.flat_thoat.Location = new System.Drawing.Point(9, 388);
+            this.flat_thoat.MinimumSize = new System.Drawing.Size(23, 23);
             this.flat_thoat.Name = "flat_thoat";
-            this.flat_thoat.Size = new System.Drawing.Size(189, 39);
+            this.flat_thoat.Size = new System.Drawing.Size(189, 36);
             this.flat_thoat.TabIndex = 6;
             this.flat_thoat.Text = "ĐĂNG XUÁT";
             this.flat_thoat.TextAlignmentHorizontal = System.Drawing.StringAlignment.Center;
@@ -114,10 +172,10 @@
             this.flat_sach.LineColorNormal = System.Drawing.Color.Green;
             this.flat_sach.LineLayout = GUI.ComponentForm.Flat_Button.LinePosition.None;
             this.flat_sach.LineSize = 0;
-            this.flat_sach.Location = new System.Drawing.Point(9, 328);
-            this.flat_sach.MinimumSize = new System.Drawing.Size(23, 25);
+            this.flat_sach.Location = new System.Drawing.Point(9, 305);
+            this.flat_sach.MinimumSize = new System.Drawing.Size(23, 23);
             this.flat_sach.Name = "flat_sach";
-            this.flat_sach.Size = new System.Drawing.Size(189, 39);
+            this.flat_sach.Size = new System.Drawing.Size(189, 36);
             this.flat_sach.TabIndex = 2;
             this.flat_sach.Text = "NHÂN VIÊN";
             this.flat_sach.TextAlignmentHorizontal = System.Drawing.StringAlignment.Center;
@@ -150,11 +208,11 @@
             this.flat_thongke.LineColorNormal = System.Drawing.Color.Green;
             this.flat_thongke.LineLayout = GUI.ComponentForm.Flat_Button.LinePosition.None;
             this.flat_thongke.LineSize = 0;
-            this.flat_thongke.Location = new System.Drawing.Point(9, 282);
+            this.flat_thongke.Location = new System.Drawing.Point(9, 262);
             this.flat_thongke.Margin = new System.Windows.Forms.Padding(4);
-            this.flat_thongke.MinimumSize = new System.Drawing.Size(23, 25);
+            this.flat_thongke.MinimumSize = new System.Drawing.Size(23, 23);
             this.flat_thongke.Name = "flat_thongke";
-            this.flat_thongke.Size = new System.Drawing.Size(189, 39);
+            this.flat_thongke.Size = new System.Drawing.Size(189, 36);
             this.flat_thongke.TabIndex = 1;
             this.flat_thongke.Text = "PHÒNG BAN";
             this.flat_thongke.TextAlignmentHorizontal = System.Drawing.StringAlignment.Center;
@@ -187,10 +245,10 @@
             this.flat_timkiem.LineColorNormal = System.Drawing.Color.Green;
             this.flat_timkiem.LineLayout = GUI.ComponentForm.Flat_Button.LinePosition.None;
             this.flat_timkiem.LineSize = 0;
-            this.flat_timkiem.Location = new System.Drawing.Point(9, 236);
-            this.flat_timkiem.MinimumSize = new System.Drawing.Size(23, 25);
+            this.flat_timkiem.Location = new System.Drawing.Point(9, 219);
+            this.flat_timkiem.MinimumSize = new System.Drawing.Size(23, 23);
             this.flat_timkiem.Name = "flat_timkiem";
-            this.flat_timkiem.Size = new System.Drawing.Size(189, 39);
+            this.flat_timkiem.Size = new System.Drawing.Size(189, 36);
             this.flat_timkiem.TabIndex = 0;
             this.flat_timkiem.Text = "TÌM KIẾM";
             this.flat_timkiem.TextAlignmentHorizontal = System.Drawing.StringAlignment.Center;
@@ -205,53 +263,22 @@
             this.flat_timkiem.UseTextHoverClick = false;
             this.flat_timkiem.Click += new System.EventHandler(this.flat_timkiem_Click);
             // 
-            // fl_help
-            // 
-            this.fl_help.Active = false;
-            this.fl_help.BackColor = System.Drawing.Color.Transparent;
-            this.fl_help.BackgroundColorClick = System.Drawing.Color.Yellow;
-            this.fl_help.BackgroundColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.fl_help.BackgroundColorNormal = System.Drawing.Color.Transparent;
-            this.fl_help.IconAlignment = 3;
-            this.fl_help.IconClick = null;
-            this.fl_help.IconHover = null;
-            this.fl_help.IconNormal = null;
-            this.fl_help.IconPositions = GUI.ComponentForm.Flat_Button.IconPosition.OnlyText;
-            this.fl_help.IconSize = new System.Drawing.Size(0, 0);
-            this.fl_help.LineColorClick = System.Drawing.Color.Empty;
-            this.fl_help.LineColorHover = System.Drawing.Color.Empty;
-            this.fl_help.LineColorNormal = System.Drawing.Color.Green;
-            this.fl_help.LineLayout = GUI.ComponentForm.Flat_Button.LinePosition.None;
-            this.fl_help.LineSize = 0;
-            this.fl_help.Location = new System.Drawing.Point(9, 373);
-            this.fl_help.MinimumSize = new System.Drawing.Size(23, 25);
-            this.fl_help.Name = "fl_help";
-            this.fl_help.Size = new System.Drawing.Size(189, 39);
-            this.fl_help.TabIndex = 7;
-            this.fl_help.Text = "HELP";
-            this.fl_help.TextAlignmentHorizontal = System.Drawing.StringAlignment.Center;
-            this.fl_help.TextAlignmentVertical = System.Drawing.StringAlignment.Center;
-            this.fl_help.TextColorClick = System.Drawing.Color.Empty;
-            this.fl_help.TextColorHover = System.Drawing.Color.Empty;
-            this.fl_help.TextColorNormal = System.Drawing.Color.Black;
-            this.fl_help.UseActive = true;
-            this.fl_help.UseBackgroundHoverClick = true;
-            this.fl_help.UseIconHoverClick = false;
-            this.fl_help.UseLineHoverClick = false;
-            this.fl_help.UseTextHoverClick = false;
-            // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1024, 517);
+            this.ClientSize = new System.Drawing.Size(1024, 480);
             this.Controls.Add(this.paluse);
             this.Controls.Add(this.panmenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             this.panmenu.ResumeLayout(false);
+            this.panmenu.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -265,5 +292,7 @@
         private ComponentForm.Flat_Button flat_timkiem;
         private ComponentForm.Flat_Button flat_thoat;
         private ComponentForm.Flat_Button fl_help;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem help;
     }
 }
