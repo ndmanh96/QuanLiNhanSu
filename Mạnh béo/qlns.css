@@ -1,0 +1,58 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+.Tieude{
+	text-align:center;
+	color:red;
+	
+}
+.Page{
+	font-size:20px;
+	font-family:arial;
+	color:black;
+}
+/* .Login{
+	font-size:18px;
+} */
+.img1{
+	margin-left:400px;
+}
+.img2{
+	margin-left:400px;
+}
+/* .Main{
+	font-size: 18px;
+} */
+.img3{
+	margin-left:300px;
+}
+/* .Timkiem{
+	font-size: 18px;
+} */
+.img4{
+	margin-left:230px;
+}
+/* .Phongban{
+	margin-left:100px;
+} */
+.img5{
+	margin-left:230px;
+}
+/* .Nhanvien{
+	font-size:18px;
+} */
+.img6{
+	margin-left:230px;
+}
+/* .Thoat{
+	font-size:18px;
+} */
+.end{
+	text-align:center;
+	color:red;
+	font-size:30px;
+	font-family:arial;
+}
+
