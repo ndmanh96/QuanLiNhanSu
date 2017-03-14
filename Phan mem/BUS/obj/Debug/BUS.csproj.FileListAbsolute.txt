@@ -61,3 +61,12 @@ F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\BUS\bin\Debug\DAL.pdb
 F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\BUS\obj\Debug\BUS.dll
 F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\BUS\obj\Debug\BUS.pdb
+C:\Users\Manh Beo\Documents\GitHub\QuanLiNhanSu\Phan mem\BUS\bin\Debug\BUS.dll
+C:\Users\Manh Beo\Documents\GitHub\QuanLiNhanSu\Phan mem\BUS\bin\Debug\BUS.pdb
+C:\Users\Manh Beo\Documents\GitHub\QuanLiNhanSu\Phan mem\BUS\bin\Debug\CommonObject.dll
+C:\Users\Manh Beo\Documents\GitHub\QuanLiNhanSu\Phan mem\BUS\bin\Debug\DAL.dll
+C:\Users\Manh Beo\Documents\GitHub\QuanLiNhanSu\Phan mem\BUS\bin\Debug\CommonObject.pdb
+C:\Users\Manh Beo\Documents\GitHub\QuanLiNhanSu\Phan mem\BUS\bin\Debug\DAL.pdb
+C:\Users\Manh Beo\Documents\GitHub\QuanLiNhanSu\Phan mem\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\Manh Beo\Documents\GitHub\QuanLiNhanSu\Phan mem\BUS\obj\Debug\BUS.dll
+C:\Users\Manh Beo\Documents\GitHub\QuanLiNhanSu\Phan mem\BUS\obj\Debug\BUS.pdb
