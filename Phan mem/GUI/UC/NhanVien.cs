@@ -160,7 +160,24 @@ namespace GUI.UC
 
         private void btn_sua_Click(object sender, EventArgs e)
         {
-           
+           QLNS.ValueObject.NhanVien a = new QLNS.ValueObject.NhanVien();
+            a.MaNV = txtmanv.Text.Trim();
+            a.TenNV = txttennv.Text.Trim();
+            a.NgaySinh = datepk.Value;
+            a.GioiTinh = com_gt.Text.Trim();
+            a.DiaChi = txtdc.Text.Trim();
+            a.MaPB = com_pb.SelectedValue.ToString();
+            a.SDT1 = txtsdt.Text.Trim();
+            a.Luong1 = float.Parse(txtluong.Text);
+
+
+            if (a.MaNV == null || a.MaNV == "") throw new Exception();
+            if (BUS.sua_NV(a) == 1)
+            {
+                loadtodgv();
+                MessageBox.Show("Sua Thành Công");
+            }
+            else throw new Exception();
 
         }
     }
