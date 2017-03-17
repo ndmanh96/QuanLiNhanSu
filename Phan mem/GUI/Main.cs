@@ -76,18 +76,18 @@ namespace GUI
 
         private void fl_help_Click(object sender, EventArgs e)
         {
-            Process.Start("http://quanlyns.herobo.com/");
+            Process.Start("http://quanlyns.comeze.com/");
         }
 
         private void help_Click(object sender, EventArgs e)
         {
-            Process.Start("http://quanlyns.herobo.com/");
+            Process.Start("http://quanlyns.comeze.com/");
         }
 
         private void panmenu_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             if (e.KeyCode==Keys.H)
-                Process.Start("http://quanlyns.herobo.com/");
+                Process.Start("http://quanlyns.comeze.com/");
         }
     }
 }
