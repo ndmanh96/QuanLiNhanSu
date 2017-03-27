@@ -120,16 +120,64 @@ namespace GUI.UC
                 loadtodgv();
                 MessageBox.Show("Thêm Thành Công");
             }
+			   clearInput();
+            disableInput();
+            btn_xoa.Active = true;
+            btn_them.Enabled = true;
+            btn_sua.Enabled = false;
         }
 
         private void btn_xoa_Click(object sender, EventArgs e)
         {
-           
+            if (btn_them.Active || btn_sua.Active)
+            {
+                clearInput();
+                disableInput();
+                btn_xoa.Text = "Xóa";
+                btn_xoa.Active = true;
+                btn_them.Enabled = true;
+                btn_sua.Enabled = false;
+            }
+            else
+            {
+                btn_xoa.Text = "Xóa";
+                btn_xoa.Active = true;
+                btn_them.Enabled = true;
+                btn_sua.Enabled = false;
+                QLNS.ValueObject.NhanVien a = new QLNS.ValueObject.NhanVien();
+                a.MaNV = txtmanv.Text.Trim();
+                if (BUS.xoa_NV(a) != 1)
+                    MessageBox.Show("Không xóa ðý?c");
+                else
+                {
+                    loadtodgv();
+                    MessageBox.Show("Xóa Thành Công");
+                }
+                clearInput();
+                disableInput();
+            }
         }
 
         private void btn_sua_Click(object sender, EventArgs e)
         {
-           
+           QLNS.ValueObject.NhanVien a = new QLNS.ValueObject.NhanVien();
+            a.MaNV = txtmanv.Text.Trim();
+            a.TenNV = txttennv.Text.Trim();
+            a.NgaySinh = datepk.Value;
+            a.GioiTinh = com_gt.Text.Trim();
+            a.DiaChi = txtdc.Text.Trim();
+            a.MaPB = com_pb.SelectedValue.ToString();
+            a.SDT1 = txtsdt.Text.Trim();
+            a.Luong1 = float.Parse(txtluong.Text);
+
+
+            if (a.MaNV == null || a.MaNV == "") throw new Exception();
+            if (BUS.sua_NV(a) == 1)
+            {
+                loadtodgv();
+                MessageBox.Show("Sua Thành Công");
+            }
+            else throw new Exception();
 
         }
     }

@@ -47,3 +47,10 @@ F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\DAL\bin\Debug\CommonObject.pdb
 F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\DAL\obj\Debug\DAL.dll
 F:\nam3_ki2\tt nhom\QuanLiNhanSu\Phan mem\DAL\obj\Debug\DAL.pdb
+C:\Users\Manh Beo\Documents\GitHub\QuanLiNhanSu\Phan mem\DAL\bin\Debug\DAL.dll
+C:\Users\Manh Beo\Documents\GitHub\QuanLiNhanSu\Phan mem\DAL\bin\Debug\DAL.pdb
+C:\Users\Manh Beo\Documents\GitHub\QuanLiNhanSu\Phan mem\DAL\bin\Debug\CommonObject.dll
+C:\Users\Manh Beo\Documents\GitHub\QuanLiNhanSu\Phan mem\DAL\bin\Debug\CommonObject.pdb
+C:\Users\Manh Beo\Documents\GitHub\QuanLiNhanSu\Phan mem\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Manh Beo\Documents\GitHub\QuanLiNhanSu\Phan mem\DAL\obj\Debug\DAL.dll
+C:\Users\Manh Beo\Documents\GitHub\QuanLiNhanSu\Phan mem\DAL\obj\Debug\DAL.pdb

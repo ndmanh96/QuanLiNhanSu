@@ -20,7 +20,7 @@ namespace GUI
             InitializeComponent();
        
         }
-        SqlConnection a = new SqlConnection(@"Data Source=DESKTOP-ONTHQMQ;Initial Catalog=QLNS;Integrated Security=True");
+        SqlConnection a = new SqlConnection(@"server=MANHBEO-PC\SQLEXPRESS;Initial Catalog=QLNS4;Integrated Security=True");
    
 
         private void txttk_Click(object sender, EventArgs e)

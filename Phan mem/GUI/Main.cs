@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace GUI
 {
@@ -20,7 +21,7 @@ namespace GUI
 
         private void panmenu_Paint(object sender, PaintEventArgs e)
         {
-
+            //menuStrip1.Hide();
         }
 
         private void flat_thoat_Click(object sender, EventArgs e)
@@ -71,6 +72,22 @@ namespace GUI
             }
 
 
+        }
+
+        private void fl_help_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://quanlyns.comeze.com/");
+        }
+
+        private void help_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://quanlyns.comeze.com/");
+        }
+
+        private void panmenu_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            if (e.KeyCode==Keys.H)
+                Process.Start("http://quanlyns.comeze.com/");
         }
     }
 }
