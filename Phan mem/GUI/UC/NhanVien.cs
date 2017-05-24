@@ -92,6 +92,8 @@ namespace GUI.UC
         private void dgvNV_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             loadtotext();
+            enableInput();
+            txtmanv.Enabled = false;
         }
 
         private void btn_them_Click(object sender, EventArgs e)
@@ -124,7 +126,7 @@ namespace GUI.UC
             disableInput();
             btn_xoa.Active = true;
             btn_them.Enabled = true;
-            btn_sua.Enabled = false;
+            btn_sua.Enabled = true;
         }
 
         private void btn_xoa_Click(object sender, EventArgs e)
