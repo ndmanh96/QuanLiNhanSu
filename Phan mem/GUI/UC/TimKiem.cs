@@ -47,7 +47,7 @@ namespace GUI.UC
 
         private void btn_tk_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-ONTHQMQ;Initial Catalog=QLNS;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=MANHBEO-PC\SQLEXPRESS;Initial Catalog=QLNS4;Integrated Security=True");
             con.Open();
             
             string s = "select maNV as[Mã Nhân Viên],tenNV as[Tên Nhân Viên],ngaySinh as[Ngày Sinh],gioiTinh as[Giới Tính],diaChi as[Địa Chỉ],NhanVien.SDT as[Số Điện Thoại],tenPB as[Tên Phòng Ban],Luong as[Lương] from NhanVien, PhongBan where NhanVien.maPB = PhongBan.maPB and tenpb=N'" + cmb_pb.Text + "'";
